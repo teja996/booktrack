@@ -1,0 +1,18 @@
+<header>list of books</header>
+<h3>list of books</h3>
+<br />
+<form action="/books" method="GET">
+  <lable>book name:</lable>
+  <input type="text" name="bookName" value="<%= bookName %>" />
+  <button type="submit">search</button>
+</form>
+<br />
+
+<ul style="line-height: 0px; display: inline-block">
+  <% books.forEach(book => { %>
+  <li style="border: medium solid; background-color: lightgrey; padding: 10px">
+    <h4>Title: <%= book.bookName %></h4>
+    <img width="150" height="150" src="<%= book.coverImage %>" />
+  </li>
+  &nbsp; &nbsp; <% }) %>
+</ul>

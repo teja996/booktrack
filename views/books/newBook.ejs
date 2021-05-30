@@ -1,0 +1,35 @@
+<header>_New book.</header>
+<br>
+<form action="/books" method="POST" >
+  <lable>Title of book:</lable>
+  <input type="text" name="bookName" value="<% books.BookName %>"/>
+  <a href="/">cancle</a>
+  <br />
+
+  <label>Author name:</label>
+  <select name="author">
+      <% authors.forEach(author => { %>
+          <option label="<%= author.name %>" value="<%= author.id %>"></option>
+      <% }) %>
+  <br />
+
+<br />
+  <label>Publish date:</label>
+  <p>Publish date:</p>
+  <input type="date" name="date" 
+    value="
+    <%= books.date.toISOString().split('T')[0] %> " /> 
+  <br />
+  <label>cover image:</label>
+  <input type="file" name="cover"  class="filepond"/>
+  <br />
+  <label>Total pages:</label>
+  <input type="number" name="totalPages" value="<%= books.totalPages %>" >
+  <br />
+  <label>Description :</label>
+  <textarea id="description" name="description" ></textarea>
+  <br />
+  <button type="submit">submit.</button>
+
+  
+</form>

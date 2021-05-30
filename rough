@@ -1,0 +1,35 @@
+* app.set("view engine"), 'view' ??
+
+* what are express layputs?
+
+* what is express.static() in app.use(/**/);?
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+scrpts runned:
+
+1=> npm init -y
+2=> npm i express ejs express-ejs-layouts
+3=> npm i --save-dev nodemon
+4=> npm i --save-dev dotenv
+5=> npm i multer
+
+
+mongodb:
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
+mongodb://127.0.0.1:27017/confusion
+mongodb+srv://profile2:Nstv9032757482@cluster0.8yyqt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

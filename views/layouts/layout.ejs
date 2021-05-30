@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/filepond/dist/filepond.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+      rel="stylesheet"
+    />
+
+    <title>books</title>
+    <style>
+      body {
+        background-color: rgba(190, 186, 180, 0.288);
+      }
+      li {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1
+        style="
+          background-color: rgb(59, 57, 57);
+          color: cornsilk;
+          display: inline-block;
+        "
+      >
+        ..booktrack...
+      </h1>
+      <%- include('../partials/header') %>
+      <script>
+        console.log("filepond registed.....");
+      </script>
+      <%- body %>
+    </div>
+
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+
+    <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+    <script src="/javaScripts/fileUplodes.js"></script>
+  </body>
+</html>
